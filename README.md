@@ -1,5 +1,4 @@
-# Expense-tracker
-My expense tracker PWA app
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
