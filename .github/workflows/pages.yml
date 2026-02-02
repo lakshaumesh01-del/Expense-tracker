@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - uses: actions/deploy-pages@v4
+```
+
+**Step 4: Commit**
+1. Scroll down
+2. Click **"Commit changes"**
+3. Click **"Commit changes"** again in the popup
+
+**Step 5: Wait 1-2 minutes**
+Your site will be live at:
+```
+https://yourusername.github.io/expense-tracker/expense-tracker.html
